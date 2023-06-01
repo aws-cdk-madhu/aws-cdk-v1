@@ -4,3 +4,8 @@ Resources:
     DeletionPolicy: Retain
     Properties:
       BucketName: document-s3-create-test-madh-n
+
+Outputs:
+  BucketNameOutput:
+    Description: The name of the created S3 bucket
+    Value: !Ref S3Bucket
